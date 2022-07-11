@@ -1,4 +1,5 @@
 import turtle
+import os
 from Pong.Score import Score
 
 
@@ -26,10 +27,12 @@ class Ball:
         if self.ball.ycor() > 290:
             self.ball.sety(290)
             self.dy *= -1
+            os.system("afplay sounds/pong_bounce.wav &")
 
         if self.ball.ycor() < -290:
             self.ball.sety(-290)
             self.dy *= -1
+            os.system("afplay sounds/pong_bounce.wav &")
 
         if self.ball.xcor() > 390:
             self.ball.goto(0, 0)
@@ -48,7 +51,9 @@ class Ball:
         if (self.ball.xcor() < -340) and (self.ball.xcor() > -350) and (self.ball.ycor() < paddle1.paddle.ycor() + 40) and (self.ball.ycor() > paddle1.paddle.ycor() - 40):
             self.ball.setx(-340)
             self.dx *= -1
+            os.system("afplay sounds/pong_bounce.wav &")
 
         if (self.ball.xcor() > 340) and (self.ball.xcor() < 350) and (self.ball.ycor() < paddle2.paddle.ycor() + 40) and (self.ball.ycor() > paddle2.paddle.ycor() - 40):
             self.ball.setx(340)
             self.dx *= -1
+            os.system("afplay sounds/pong_bounce.wav &")
