@@ -1,4 +1,5 @@
 import turtle
+from Score import Score
 
 
 # Ball Class
@@ -21,7 +22,7 @@ class Ball:
         self.ball.sety(self.ball.ycor() + self.dy)
 
     # Border checking
-    def checkBorder(self) -> None:
+    def checkBorder(self, paddle1, paddle2) -> None:
         if self.ball.ycor() > 290:
             self.ball.sety(290)
             self.dy *= -1
@@ -33,10 +34,14 @@ class Ball:
         if self.ball.xcor() > 390:
             self.ball.goto(0, 0)
             self.dx *= -1
+            paddle1.score += 1
+            Score.write(Score, paddle1, paddle2)
 
         if self.ball.xcor() < -390:
             self.ball.goto(0, 0)
             self.dx *= -1
+            paddle2.score += 1
+            Score.write(Score, paddle1, paddle2)
 
     # Paddle and ball collision
     def checkCollision(self, paddle1, paddle2) -> None:
