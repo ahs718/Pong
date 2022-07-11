@@ -10,7 +10,7 @@ paddle2 = Paddle(350, 0, "Up", "Down")
 # Ball
 ball = Ball(3, 3)
 
-# Score
+# Set initial score to zero
 Score.write(Score, paddle1, paddle2)
 
 # Main game Loop
