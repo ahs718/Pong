@@ -15,6 +15,7 @@ class Paddle:
         self.paddle.goto(x, y)
         self.upKey = upKey
         self.downKey = downKey
+        self.score = 0
 
         # Keyboard binding
         window.onkeypress(self.paddleUp, upKey)
