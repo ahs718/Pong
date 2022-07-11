@@ -1,5 +1,5 @@
-import turtle
 import os
+import turtle
 from Pong.Score import Score
 
 
