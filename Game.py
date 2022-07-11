@@ -1,8 +1,7 @@
-import turtle
-from Window import window
-from Ball import Ball
-from Paddle import Paddle
-from Score import Score
+from Pong.Window import window
+from Pong.Ball import Ball
+from Pong.Paddle import Paddle
+from Pong.Score import Score
 
 # Paddles
 paddle1 = Paddle(-350, 0, "w", "s")
