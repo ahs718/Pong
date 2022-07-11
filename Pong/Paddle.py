@@ -1,5 +1,5 @@
 import turtle
-from Window import window
+from Pong.Window import window
 
 
 # Paddle Class

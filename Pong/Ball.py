@@ -1,5 +1,5 @@
 import turtle
-from Score import Score
+from Pong.Score import Score
 
 
 # Ball Class
