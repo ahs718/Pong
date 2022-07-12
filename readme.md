@@ -15,6 +15,16 @@
 -   <kbd>&uarr;</kbd> (Up arrow key) - right paddle up
 -   <kbd>&darr;</kbd> (Down arrow key) - right paddle down
 
+## How to Play
+
+In order to play the game, you can clone the repository and run the `Game.py` file. The commands to do so on a macOS / linux terminal are shown below:
+
+```bash
+git clone https://github.com/ahs718/Pong-Game.git
+cd Pong-Game
+python3 Game.py
+```
+
 ## My experience making this project.
 
 Pong is a classic game that is recreated by many programmers as a part of their beginner projects. I also decided to undergo the challenge of making this game, but decided to add some differences now that I have experience with object-oriented programming.
