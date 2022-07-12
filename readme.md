@@ -25,7 +25,7 @@ cd Pong-Game
 python3 Game.py
 ```
 
-## My experience making this project.
+## My experience making this project
 
 Pong is a classic game that is recreated by many programmers as a part of their beginner projects. I also decided to undergo the challenge of making this game, but decided to add some differences now that I have experience with object-oriented programming.
 
