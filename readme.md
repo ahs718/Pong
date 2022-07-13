@@ -1,5 +1,8 @@
 # Pong Game made with Python
 
+## Example
+![Example](demo/demo.gif)
+
 ## Features
 
 -   This project is a Pong game created with Python.
