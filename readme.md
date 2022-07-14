@@ -23,7 +23,7 @@
 In order to play the game, you can clone the repository and run the `Game.py` file. The commands to do so on a macOS / linux terminal are shown below:
 
 ```bash
-git clone https://github.com/ahs718/Pong-Game.git
+git clone https://github.com/ahs718/Pong.git
 cd Pong-Game
 python3 Game.py
 ```
